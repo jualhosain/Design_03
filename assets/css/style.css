@@ -1,0 +1,308 @@
+:root{
+    --pri: #17daa3;
+    --sec: #edeff1;
+    --main_bg: #f9f9fa;
+    --white: #fff;
+    --text: #7f7f7f;
+}
+
+
+body{
+    font-family: 'Raleway',
+    sans-serif !important;
+}
+
+
+h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.media-body h5 {
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+
+
+
+
+
+nav#navbar{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#banner .carousel-item{
+    height: 700px!important;
+}
+
+#banner {
+    background: url('../img/banner.jpg');
+}
+
+.carousel-caption {
+    height: 90px;
+    top: calc(50% - 110px);
+}
+
+
+ol.carousel-indicators {
+    top: calc(50% + 140px)
+}
+ol.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+#banner{
+    line-height: 2rem;
+}
+
+#banner h5 span{
+    font-weight: bold;
+}
+#banner h5 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+#banner p{
+    font-weight: 100;
+    font-size: .8rem;
+}
+
+#banner button{
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 0 2rem;
+}
+
+#about_us{
+    padding: 4rem 0;
+}
+
+
+#about_us .icon i{
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background: var(--sec);
+    color:var(--text);
+}
+
+.icon {
+    margin-bottom: 32px;
+}
+
+section#about_us h4 {
+    font-size: 1.4rem;
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+section#about_us p {
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: var(--text);
+}
+
+body button {
+    border: none;
+    padding: 6px 35px;
+    background: var(--pri);
+    border-radius: 35px;
+    color: white;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+section#about_1{
+    background:var(--main_bg);
+}
+
+.fortext{
+    line-height: 1.8rem;
+}
+
+#services{
+    background:var(--main_bg);
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+
+.about_icon i{
+    color: var(--pri);
+    padding: 1rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.media-body{
+    padding: 0 .5rem;
+}
+
+.media-body p{
+    line-height: 2.4rem;
+    font-size: .8rem;
+}
+.media{
+    padding: 1rem 0;
+}
+
+
+.person{
+    height: 220px;
+    padding: 0;
+}
+.person img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#price{
+    background: var(--main_bg);
+}
+
+#price .price {
+    font-size: 3rem;
+    color: var(--pri);
+}
+#price .card-header p{
+    font-size: .8rem;
+    font-weight: 300;
+    color: var(--text);
+}
+
+.card{
+    border: none;
+}
+.card-header{
+    background: white;
+    border-bottom: 1px solid var(--sec);
+}
+
+.card-body{
+    margin: 30px 0;
+}
+.card-body p{
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+.card-footer{
+    background: var(--pri);
+    border: none;
+    color: white;
+}
+
+#about_text{
+    background:url('../img/testimonial.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#about_text h2{
+    color: white;
+    font-weight:100;
+}
+#about_text h2 span{
+    font-weight: 500;
+}
+
+#about_text button {
+    padding:.5rem 2rem;
+}
+
+footer .img{
+    width: 20px;
+    height: 20px;
+    margin-right:10px;
+}
+footer img{
+    width: 100%;
+    height: 100%;
+}
+
+footer a{
+    color: var(--text);
+    padding: 0 10px;
+    display: inline-block;
+    
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: var(--text);
+}
+footer p{
+    color: var(--text)
+}
+
+section#about_us h2{
+    position: relative;
+}
+section#about_us h2::before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: var(--pri);
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 20px);
+}
+
+section#services h2 {
+    position: relative;
+}
+section#services h2::before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: var(--pri);
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 20px);
+}
+
+section#price h2 {
+    position: relative;
+}
+
+section#price h2::before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: var(--pri);
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 20px);
+}
+
+section#team h2 {
+    position: relative;
+}
+section#team h2::before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: var(--pri);
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 20px);
+}
+
