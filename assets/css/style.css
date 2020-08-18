@@ -1,5 +1,37 @@
+@media (min-width: 576px) , (max-width: 620){
+    .person{
+        height: 800px!important;
+        padding: 0;
+    }
+}
+
+@media (min-width: 621px) {
+    .person {
+        height: 400px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .person {
+        height: 300px !important;
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+}
+
+
+
+
+
 :root{
     --pri: #17daa3;
+    --priDark: #14b98b;
     --sec: #edeff1;
     --main_bg: #f9f9fa;
     --white: #fff;
@@ -42,6 +74,16 @@ nav#navbar{
 #banner {
     background: url('../img/banner.jpg');
 }
+#banner button{
+    transition: .3s all ease;
+}
+
+#banner button:hover{
+    background:var(--pri);
+    border: 1px solid var(--pri);
+
+}
+
 
 .carousel-caption {
     height: 90px;
@@ -95,6 +137,12 @@ ol.carousel-indicators li {
     border-radius: 50%;
     background: var(--sec);
     color:var(--text);
+    transition: .3s all ease;
+}
+
+#about_us .icon i:hover{
+    background: var(--pri);
+    color: white;
 }
 
 .icon {
@@ -121,7 +169,15 @@ body button {
     color: white;
     font-weight: 600;
     font-size: .9rem;
+    transition: .3s all ease;
 }
+button:focus {
+    outline: none!important;
+}
+button:hover{
+    background: var(--priDark);
+}
+
 
 section#about_1{
     background:var(--main_bg);
@@ -161,10 +217,6 @@ h2{
 }
 
 
-.person{
-    height: 220px;
-    padding: 0;
-}
 .person img{
     width: 100%;
     height: 100%;
@@ -306,3 +358,9 @@ section#team h2::before {
     left: calc(50% - 20px);
 }
 
+.card-footer{
+    cursor: pointer;
+}
+.card-footer:hover{
+    background: var(--priDark);
+}
